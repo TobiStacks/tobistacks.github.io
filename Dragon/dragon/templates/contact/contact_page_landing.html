@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1 class="cc-inner-title">{{ page.title }}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="cc-contact-text">
+                {{ page.thank_you_text|richtext }}
+            </div>   
+        </div>
+    </div>
+    <div class="col-md-6 mt-md-2 mt-0">
+    </div>
+{% endblock %}
